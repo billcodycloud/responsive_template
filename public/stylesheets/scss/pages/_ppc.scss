@@ -31,3 +31,15 @@
     }
   }
 }
+@media (max-width: 575.98px) {
+  .ppc {
+    .filters .clearable-input input {
+      min-width: 290px;       
+    }
+    .ppc-table {
+      > header {
+        font-size: 0.7rem;
+      }
+    }
+  }  
+}
