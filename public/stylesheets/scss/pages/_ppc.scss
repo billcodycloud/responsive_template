@@ -1,0 +1,45 @@
+@media (max-width: 767.98px) {
+  .ppc .campaign {
+    min-width: 100px !important; // have to use !important because the base style it's using !important
+    max-width: 100px !important; // have to use !important because the base style it's using !important
+  }
+
+  .ppc .ppc-table {
+    > header {
+      font-size: 0.8rem;
+    }
+
+    section .col {
+      font-size: 12px;
+      .original-currency {
+        font-size: 11px;
+      }
+  
+      &.campaign {
+        .dir-vertical {
+          min-width: 40px;
+          .campaign-flag {
+            min-width: none;
+            width: 20px;
+          }
+    
+          .form-switch .form-check-input {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .ppc {
+    .filters .clearable-input input {
+      min-width: 290px;       
+    }
+    .ppc-table {
+      > header {
+        font-size: 0.7rem;
+      }
+    }
+  }  
+}

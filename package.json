@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass:watch": "sass -w ./public/stylesheets/style.scss ./public/stylesheets/style.css"
+    "sass:watch": "sass -w ./public/stylesheets/scss/style.scss ./public/stylesheets/style.css"
   },
   "author": "",
   "license": "PRIVATE",
