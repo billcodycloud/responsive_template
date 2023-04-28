@@ -46,4 +46,30 @@
   transform: translate3d(0, 0, 0);
 }
 
+@media (max-width: 767.98px) {
+  .ppc .campaign {
+    min-width: 100px !important;
+    max-width: 100px !important;
+  }
+  .ppc .ppc-table > header {
+    font-size: 0.8rem;
+  }
+  .ppc .ppc-table section .col {
+    font-size: 12px;
+  }
+  .ppc .ppc-table section .col .original-currency {
+    font-size: 11px;
+  }
+  .ppc .ppc-table section .col.campaign .dir-vertical {
+    min-width: 40px;
+  }
+  .ppc .ppc-table section .col.campaign .dir-vertical .campaign-flag {
+    min-width: none;
+    width: 20px;
+  }
+  .ppc .ppc-table section .col.campaign .dir-vertical .form-switch .form-check-input {
+    width: 25px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
