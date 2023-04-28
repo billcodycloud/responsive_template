@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Coves;
+  font-weight: normal;
+  src: url("https://shopkeeper.com/assets-n/Coves Light_0-ea31599245210cec0ed6d4bc40a8a4e3.otf") format("opentype");
+}
+@font-face {
+  font-family: Coves;
+  font-weight: bold;
+  src: url("https://shopkeeper.com/assets-n/Coves Bold_0-96c3dce60b2ff577b769aee25e97df45.otf") format("opentype");
+}
+@font-face {
+  font-family: Helvetica;
+  font-weight: normal;
+  src: url("https://shopkeeper.com/assets-n/Helvetica-7609ab53b261e6316c42da208efef14b.ttf");
+}
+@font-face {
+  font-family: Helvetica;
+  font-weight: lighter;
+  src: url("https://shopkeeper.com/assets-n/helvetica-light-587ebe5a59211-9a8c18bd1dbe8508bc2525be7e07d0ff.ttf");
+}
+@font-face {
+  font-family: Helvetica;
+  font-weight: bold;
+  src: url("https://shopkeeper.com/assets-n/Helvetica-Bold-c136c53523ef239c3a6dae97004efd7a.ttf");
+}
+@font-face {
+  font-family: Helvetica;
+  font-style: italic;
+  src: url("https://shopkeeper.com/assets-n/Helvetica-Oblique-df756f9e8f56f70f4e9c41feaaf9b9be.ttf");
+}
+@font-face {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-style: italic;
+  src: url("https://shopkeeper.com/assets-n/Helvetica-BoldOblique-a43d36f0f2f31b2021db3877707620ef.ttf");
+}
+.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 9999;
+  transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+/*# sourceMappingURL=style.css.map */
