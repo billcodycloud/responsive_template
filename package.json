@@ -1,0 +1,14 @@
+{
+  "name": "responsive_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass -w ./public/stylesheets/style.scss ./public/stylesheets/style.css"
+  },
+  "author": "",
+  "license": "PRIVATE",
+  "dependencies": {
+    "sass": "^1.62.0"
+  }
+}
