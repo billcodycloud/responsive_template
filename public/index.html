@@ -353,7 +353,7 @@
               <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdown-user-menu" style="">
                 <li>
                   <a data-turbo="false" tabindex="-1" href="/profile">
-                  <i class="fa fa-cog fa-lg text-muted pull-right"></i>My Account
+                    <i class="fa fa-cog fa-lg text-muted pull-right"></i>My Account
                   </a>
                 </li>
                 <li class="presentation-switch">
@@ -369,12 +369,12 @@
                 </li>
                 <li>
                   <a data-turbo="false" href="https://help.shopkeeper.com/">
-                  <i class="fa fa-comment fa-lg text-muted pull-right"></i>Help
+                    <i class="fa fa-comment fa-lg text-muted pull-right"></i>Help
                   </a>
                 </li>
                 <li>
                   <a data-turbo="false" tabindex="-1" href="/logout">
-                  <i class="fa fa-sign-out fa-lg text-muted pull-right"></i>Log out
+                    <i class="fa fa-sign-out fa-lg text-muted pull-right"></i>Log out
                   </a>
                 </li>
               </ul>
@@ -393,7 +393,7 @@
           </h1>
           <div class="ppc hc-budget hc-cpc hc-spend hc-acos hc-cpm hc-ctr" data-controller="ppc sort-buttons toggle-class error-handler persistent-page-preferences" data-action="" data-persistent-page-preferences-page-value="ppc">
             <turbo-frame id="change-campaign-popup" class="popup-turbo-frame" src="" "="">
-              <div class="popup " data-controller="popup" data-action="click->popup#onCoverClick">
+              <div class="popup" data-controller="popup" data-action="click->popup#onCoverClick">
                 <div class="popup-container" data-popup-target="container">
                   <div class="popup-close">
                     <svg role="button" data-action="click->popup#close">
@@ -776,7 +776,7 @@
               </div>
             </form>
             <turbo-frame id="details" class="popup-turbo-frame" src="" "="">
-              <div class="popup " data-controller="popup" data-action="click->popup#onCoverClick">
+              <div class="popup" data-controller="popup" data-action="click->popup#onCoverClick">
                 <div class="popup-container" data-popup-target="container">
                   <div class="popup-close">
                     <svg role="button" data-action="click->popup#close">
@@ -791,7 +791,7 @@
               <div class="spinner-border" role="status"></div>
             </div>
             <div class="ppc-table-container">
-              <turbo-frame data-controller="fix-frame-src" id="ppc-table" class="ppc-table" "="">
+              <turbo-frame data-controller="fix-frame-src" id="ppc-table" class="ppc-table">
                 <header>
                   <nav style="position:absolute;left:5px">
                     <svg role="button" data-controller="dropdown-menu" data-dropdown-menu-placement-value="bottom-start" data-dropdown-menu-target-value=".settings-menu" data-dropdown-menu-auto-close-value="outside" data-action="click->dropdown-menu#toggle">
@@ -802,34 +802,34 @@
                     Campaign  
                   </div>
                   <nav class="actions"></nav>
-                  <div data-action="click->sort-buttons#toggle" data-field="budget" title="" class="header-column budget  sortable ">
+                  <div data-action="click->sort-buttons#toggle" data-field="budget" title="" class="header-column budget sortable">
                     Budget  
                   </div>
-                  <div data-action="click->sort-buttons#toggle" data-field="cpc" title="Cost Per Click" class="header-column cpc  sortable ">
+                  <div data-action="click->sort-buttons#toggle" data-field="cpc" title="Cost Per Click" class="header-column cpc sortable">
                     CPC  
                   </div>
-                  <div data-action="click->sort-buttons#toggle" data-field="impressions" title="" class="header-column impressions  sortable ">
+                  <div data-action="click->sort-buttons#toggle" data-field="impressions" title="" class="header-column impressions sortable">
                     Impr.  
                   </div>
-                  <div data-action="click->sort-buttons#toggle" data-field="clicks" title="" class="header-column clicks  sortable ">
+                  <div data-action="click->sort-buttons#toggle" data-field="clicks" title="" class="header-column clicks sortable">
                     Clicks  
                   </div>
-                  <div data-action="click->sort-buttons#toggle" data-field="spend" title="" class="header-column spend  sortable ">
+                  <div data-action="click->sort-buttons#toggle" data-field="spend" title="" class="header-column spend sortable">
                     Spend  
                   </div>
-                  <div data-action="click->sort-buttons#toggle" data-field="acos" title="Advertising Cost of Sale" class="header-column acos  sortable ">
+                  <div data-action="click->sort-buttons#toggle" data-field="acos" title="Advertising Cost of Sale" class="header-column acos sortable">
                     ACoS  
                   </div>
-                  <div data-action="click->sort-buttons#toggle" data-field="sales" title="" class="header-column sales  sortable ">
+                  <div data-action="click->sort-buttons#toggle" data-field="sales" title="" class="header-column sales sortable">
                     Sales  
                   </div>
-                  <div data-action="click->sort-buttons#toggle" data-field="unitsSold" title="" class="header-column unitsSold  sortable ">
+                  <div data-action="click->sort-buttons#toggle" data-field="unitsSold" title="" class="header-column unitsSold sortable">
                     Units Sold  
                   </div>
-                  <div data-action="click->sort-buttons#toggle" data-field="cpm" title="Cost Per Thousand Impressions" class="header-column cpm  sortable ">
+                  <div data-action="click->sort-buttons#toggle" data-field="cpm" title="Cost Per Thousand Impressions" class="header-column cpm sortable">
                     CPM  
                   </div>
-                  <div data-action="click->sort-buttons#toggle" data-field="ctr" title="Click Through Rate" class="header-column ctr  sortable ">
+                  <div data-action="click->sort-buttons#toggle" data-field="ctr" title="Click Through Rate" class="header-column ctr sortable">
                     CTR  
                   </div>
                 </header>
@@ -849,19 +849,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-8010e5" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/totals?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -915,19 +915,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-17b262" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/6386794778022?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -981,19 +981,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-32f9f9" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/149545945123218?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1047,19 +1047,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-32da37" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/236568173711961?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1113,19 +1113,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-8fabb3" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/23084543453678?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1179,19 +1179,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-3d9432" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/23457836986399?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1245,19 +1245,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-61015e" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/79309963984962?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1311,19 +1311,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-1ea4a7" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/196031776143203?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1377,19 +1377,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-79088e" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/153363966424903?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1449,28 +1449,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     CA$0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     CA$0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     CA$0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-462718" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/108369159730631?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1530,28 +1530,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     €0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     €0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     €0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-4a8c74" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/45332756092455?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1611,28 +1611,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     €0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     €0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     €0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-03e41b" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/275611428444861?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1686,19 +1686,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-3761b5" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/237200030587587?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1758,28 +1758,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     ¥0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     ¥0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     ¥0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-987f76" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/132837828290673?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1833,19 +1833,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-6226ba" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/100012246731299?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1899,19 +1899,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-8306e6" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/112790510494345?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -1971,28 +1971,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     CA$0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     CA$0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     CA$0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-33016e" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/120262735395268?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2052,28 +2052,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     €0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     €0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     €0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-334da0" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/130725846837161?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2127,19 +2127,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-392587" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/168724754727032?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2199,28 +2199,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     €0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     €0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     €0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-c600f9" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/234680412299046?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2259,19 +2259,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-73564a" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/93299223999165?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2310,19 +2310,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-1efa3c" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/213458297657942?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2361,19 +2361,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-915fcd" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/140898693906485?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2433,28 +2433,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     €0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     €0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     €0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-551975" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/166488551864039?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2514,28 +2514,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     ¥0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     ¥0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     ¥0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-10401b" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/264619744592843?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2574,19 +2574,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-d3ac22" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/18054473879969?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2625,19 +2625,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-f11070" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/2492684747682?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2697,28 +2697,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     £0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     £0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     £0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-69ee61" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/33432603881255?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2778,28 +2778,28 @@
                     </span>
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                     <span class="original-currency">
                     £0
                     </span>
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                     <span class="original-currency">
                     £0
                     </span>
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                     <span class="original-currency">
                     £0.00
                     </span>
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-e065e9" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/271090854282036?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2853,19 +2853,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-eb068b" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/107318210354262?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2919,19 +2919,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-9579c5" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/263750292926232?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=display&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -2985,19 +2985,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-10e3c0" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/168333939995638?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -3051,19 +3051,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-aa3753" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/241829985494067?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -3117,19 +3117,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-032cf8" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/190813954391160?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -3183,19 +3183,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-b45857" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/173330589098127?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -3249,19 +3249,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-d8d6c3" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/157952048545756?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -3315,19 +3315,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-7ecb19" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/261998303184066?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -3381,19 +3381,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-1184f0" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/163867558358966?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -3447,19 +3447,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-269453" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/261016290931425?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -3513,19 +3513,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-de0b04" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/116449786376696?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
@@ -3579,19 +3579,19 @@
                     $0.00
                   </div>
                   <div class="col impressions right"> 0 </div>
-                  <div class="col clicks right">      0 </div>
+                  <div class="col clicks right"> 0 </div>
                   <div class="col spend right">
                     $0
                   </div>
-                  <div class="col acos right">        0.00% </div>
+                  <div class="col acos right"> 0.00% </div>
                   <div class="col sales right">
                     $0
                   </div>
-                  <div class="col unitsSold right">  0 </div>
+                  <div class="col unitsSold right"> 0 </div>
                   <div class="col cpm right">
                     $0.00
                   </div>
-                  <div class="col ctr right">         0.00% </div>
+                  <div class="col ctr right"> 0.00% </div>
                 </section>
                 <turbo-frame class="chart-container" id="chart-157540" loading="lazy" src="https://shopkeeper.com/app/ppc/chart/145098863215764?hc=budget&amp;hc=cpc&amp;hc=spend&amp;hc=acos&amp;hc=cpm&amp;hc=ctr&amp;dateRange=30days&amp;campaignType=product&amp;status=">
                   <div class="alert-primary spinner-border" role="status"></div>
